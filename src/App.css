@@ -1,0 +1,101 @@
+/* src/App.css */
+.App {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.App-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form-container {
+  padding: 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+form input[type="url"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box; /* Important for padding and width */
+}
+
+form button {
+  padding: 14px;
+  background-color: #e6007e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+form button:hover:not(:disabled) {
+  background-color: #c4006b;
+}
+
+form button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* --- New Styles for Mobile-Friendly Radio Buttons --- */
+.radio-group-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.radio-label {
+  position: relative;
+  display: block;
+}
+
+.radio-label .radio-text {
+  display: block;
+  padding: 12px;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.2s, background-color 0.2s;
+  font-weight: 500;
+}
+
+/* Hide the default radio button */
+.radio-label input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Style for the selected option */
+.radio-label input[type="radio"]:checked + .radio-text {
+  border-color: #e6007e;
+  background-color: #fce4f3;
+  color: #e6007e;
+  font-weight: 700;
+}
