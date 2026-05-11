@@ -2,3 +2,8 @@
   path = "/*"
   excludedPath = "/.netlify/*"
   function = "auth"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
