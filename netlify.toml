@@ -1,11 +1,6 @@
 [[edge_functions]]
   path = "/*"
-  excludedPath = "/.netlify/*"
-  excludedPath = "/manifest.json"
-  excludedPath = "/favicon.ico"
-  excludedPath = "/logo192.png"
-  excludedPath = "/logo512.png"
-  excludedPath = "/apple-touch-icon.png"
+  excludedPath = ["/.netlify/*", "/manifest.json", "/favicon.ico", "/logo192.png", "/logo512.png", "/apple-touch-icon.png"]
   function = "auth"
 
 [[redirects]]
